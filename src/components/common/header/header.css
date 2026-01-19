@@ -1,0 +1,138 @@
+/*--------head------------*/
+.head {
+  padding: 20px 0;
+  color: #037124;
+}
+.logo h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.head .icon {
+  margin-left: 10px;
+}
+/*--------head------------*/
+/*--------header------------*/
+header {
+  background-color: rgba(12, 175, 31, 0.2);
+  margin: 0 30px;
+}
+header .nav {
+  display: flex !important;
+}
+header li {
+  margin-right: 40px;
+}
+header ul {
+  padding: 30px 20px;
+}
+header ul li a {
+  color: #037124;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  color: #080236;
+}
+.start {
+  background-color: #080236;
+  padding: 30px 70px;
+  color: #037124;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.toggle {
+  display: none;
+}
+/*--------header------------*/
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+  }
+  header {
+    margin: 0;
+    background-color:#080236;
+    position: relative;
+  }
+  header ul.flexSB {
+    display: none;
+    background-color: #048546;
+  }
+  header ul li {
+    margin-bottom: 20px;
+  }
+  .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: #080236;
+  }
+}
+/* Header Links */
+header ul li .solid-link {
+  color: #fff;             /* White text */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header ul li .solid-link:hover {
+  color: #ffd700;          /* optional hover color, e.g., gold */
+  text-decoration: underline; 
+}
+
+/* Header CTA button link */
+header .button .solid-link {
+  color: #fff;            /* White */
+  background-color: #080236; /* teal button background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+header .button .solid-link:hover {
+  background-color:#080236; /* darker teal */
+  color: #fff;
+  text-decoration: none;
+}
+/* Logo container */
+.logo-box {
+  display: flex;
+  flex-direction: column;   /* puts name below logo */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo image */
+.logo-img {
+  width: 150px;              /* adjust as needed */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 6px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.logo-img:hover {
+  transform: scale(1.08);
+}
+
+/* Company name */
+.company-name {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #080236;           /* Gado InfoTech green */
+  text-transform: uppercase;
+}
